@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/thomas-lowry/figma-plugin-ds/dist/figma-plugin-ds.css">
+
+<style>
+  body {
+    padding: 2em;
+  }
+
+  div {
+    margin: 1em;
+  }
+
+  input {
+    display: block;
+  }
+</style>
+
+<h1>Hello world!</h1>
+<div>
+  <label for="source_lnk">Source Link</label>
+  <input id="source_lnk" class="input__field" type="text" value="Enter your source link" />
+
+  <label for="destination_lnk">Destination Link</label>
+  <input id="destination_lnk" class="input__field" type="text" value="Enter you destination links" />
+
+</div>
+
+<div>
+  <button class="button button--primary" id="submit">Submit</button>
+</div>
+
+<script>
+  document.getElementById("submit").onclick = () => {
+    console.log("submit pressed");
+  }
+</script>
